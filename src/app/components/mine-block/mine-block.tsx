@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import axios from "axios";
 import styles from "./mine-block.module.css";
 import {Preloader} from "../preloader/preloader";
@@ -25,7 +25,7 @@ export const MineBlock = (): JSX.Element => {
 
     const toggleFormHandler = () => setSimpleData(!isSimpleData)
 
-    async function getData() {
+    /*async function getData() {
         try {
             setSimpleData(true)
             setError('')
@@ -38,7 +38,22 @@ export const MineBlock = (): JSX.Element => {
         } catch (error: any) {
             setError(error.response.data?.message)
         }
-    }
+    }*/
+
+    const getData = useCallback(async () => {
+        try {
+            setSimpleData(true)
+            setError('')
+            setLoading(true)
+            const response = await http.get('')
+            if (response.status === 200) {
+                setCity('')
+                return response.data
+            }
+        } catch (error: any) {
+            setError(error.response.data?.message)
+        }
+    }, [http])
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()

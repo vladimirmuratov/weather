@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0f405c1-5007-4e22-be61-b609da9322dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/mine-block/mine-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/mine-block/mine-block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
       <workItem from="1653820474207" duration="3626000" />
       <workItem from="1653824789460" duration="71000" />
       <workItem from="1653825601177" duration="1482000" />
-      <workItem from="1653831434964" duration="387000" />
+      <workItem from="1653831434964" duration="820000" />
     </task>
     <servers />
   </component>
