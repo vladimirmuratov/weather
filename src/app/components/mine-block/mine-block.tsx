@@ -13,6 +13,16 @@ export const MineBlock = (): JSX.Element => {
     const [isLoading, setLoading] = useState(false)
     const [isSimpleData, setSimpleData] = useState(true)
 
+    const http = axios.create({
+        baseURL: BaseUrl,
+        headers: {
+            'Content-type': 'Application/json'
+        },
+        params: {
+            q: `${city ? city : "Moscow"}`
+        }
+    })
+
     const toggleFormHandler = () => setSimpleData(!isSimpleData)
 
     async function getData() {
@@ -20,17 +30,13 @@ export const MineBlock = (): JSX.Element => {
             setSimpleData(true)
             setError('')
             setLoading(true)
-            const response = await axios.get(BaseUrl, {
-                params: {
-                    q: `${city ? city : "Moscow"}`
-                }
-            })
+            const response = await http.get('')
             if (response.status === 200) {
                 setCity('')
                 return response.data
             }
         } catch (error: any) {
-            setError(error.response.data.message)
+            setError(error.response.data?.message)
         }
     }
 
