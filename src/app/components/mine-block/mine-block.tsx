@@ -31,7 +31,6 @@ export const MineBlock = (): JSX.Element => {
             setError('')
             setLoading(true)
             const response = await http.get('')
-            console.log('res1', response)
             if (response.status === 200) {
                 setCity('')
                 return response.data
@@ -52,7 +51,6 @@ export const MineBlock = (): JSX.Element => {
     useEffect(() => {
         setSimpleData(true)
         getData().then(res => {
-            console.log('res2', res)
             setData(res)
             setLoading(false)
         })

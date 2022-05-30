@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0f405c1-5007-4e22-be61-b609da9322dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/mine-block/mine-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/mine-block/mine-block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../hospital_html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\DEV\REACT\projects\weather\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -56,6 +54,7 @@
       <workItem from="1653832478616" duration="414000" />
       <workItem from="1653834381414" duration="245000" />
       <workItem from="1653909233622" duration="132000" />
+      <workItem from="1653911914655" duration="1478000" />
     </task>
     <servers />
   </component>
