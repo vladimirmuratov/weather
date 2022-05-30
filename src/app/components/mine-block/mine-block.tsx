@@ -25,27 +25,13 @@ export const MineBlock = (): JSX.Element => {
 
     const toggleFormHandler = () => setSimpleData(!isSimpleData)
 
-    /*async function getData() {
-        try {
-            setSimpleData(true)
-            setError('')
-            setLoading(true)
-            const response = await http.get('')
-            if (response.status === 200) {
-                setCity('')
-                return response.data
-            }
-        } catch (error: any) {
-            setError(error.response.data?.message)
-        }
-    }*/
-
     const getData = useCallback(async () => {
         try {
             setSimpleData(true)
             setError('')
             setLoading(true)
             const response = await http.get('')
+            console.log('res1', response)
             if (response.status === 200) {
                 setCity('')
                 return response.data
@@ -66,6 +52,7 @@ export const MineBlock = (): JSX.Element => {
     useEffect(() => {
         setSimpleData(true)
         getData().then(res => {
+            console.log('res2', res)
             setData(res)
             setLoading(false)
         })
