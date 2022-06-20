@@ -19,7 +19,7 @@ export const MineBlock = (): JSX.Element => {
             'Content-type': 'Application/json'
         },
         params: {
-            q: `${city ? city : "Moscow"}`
+            q: `${city ? city.trim() : "Moscow"}`
         }
     })
 
