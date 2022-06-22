@@ -8,13 +8,13 @@ interface Props {
 }
 
 export const Form: React.FC<Props> = ({city, onChange, onSubmit}): JSX.Element => (
-    <form className={styles.mineBlock_form} onSubmit={onSubmit}>
+    <form className={styles.form_block} onSubmit={onSubmit}>
         <input
-            className={styles.mineBlock_input}
+            className={styles.form_input}
             name="search"
             value={city}
             onChange={(e) => onChange(e.target.value)}
         />
-        <button type="submit" className={styles.mineBlock_button}>Search</button>
+        <button type="submit" className={styles.form_button}>Search</button>
     </form>
 )
