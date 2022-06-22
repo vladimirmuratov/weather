@@ -23,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weather-gismeteo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\DEV\REACT\projects\weather\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -58,6 +58,7 @@
       <workItem from="1653918455050" duration="96000" />
       <workItem from="1654086092879" duration="220000" />
       <workItem from="1654086375594" duration="19000" />
+      <workItem from="1655744395287" duration="638000" />
     </task>
     <servers />
   </component>
